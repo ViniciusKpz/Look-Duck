@@ -2,33 +2,40 @@
     background-color: black;
     color: whitesmoke;  
 }
+
 html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; 
 }
+
 body::-webkit-scrollbar {
     display: none;
 }
+
 .explorar{
     margin-top: 50px;
     margin-left: 30px;
     font-size: 35px;
 }
+
 .subtitulo{
     margin-left: 30px;
 }
+
 .inicio {
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-start;
     gap: 20px; 
 }
+
 .catlog{
     margin-left: 30px;
     font-size: 40px;
 }
-.senna {
+
+.filme {
     width: 700px;
     height: auto;
     flex-shrink: 0;
@@ -36,26 +43,31 @@ body::-webkit-scrollbar {
     margin-left: 10px;
     border-radius: 5px;
 }
-.sinopsesenna{
+
+.sinopse{
     font-size: 18px;
     margin-left: 10px;
 }
+
 .indicacao{
     width: 40px;
     height: auto;
     margin-left: 20px;
 }
+
 .filmes{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
+
 .filmes img {
     width: 340px;
     height: 520px;
     object-fit: cover;
 }
+
 .wacth {
     padding: 20px 45px;
     font-size: 20px;
