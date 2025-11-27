@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
     font-size: 40px;
 }
 
-.filme {
+.filmecatlog {
     width: 700px;
     height: auto;
     flex-shrink: 0;
