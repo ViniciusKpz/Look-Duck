@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+  .corpo{
+    background-color: black;
+    color: whitesmoke;  
+}
+.planos {
+  max-width: 720px;
+  margin: 40px auto;
+  background: #fff;
+  color: #000;
+  border-radius: 12px;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.planos h2 { margin-top: 0; font-size: 24px; }
+.planos p { color: #333; font-size: 14px; margin-bottom: 20px; }
+
+.planos table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.planos th, .planos td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.planos tbody tr:last-child td { border-bottom: none; }
+
+@media (max-width: 600px) {
+  .planos { padding: 16px; }
+  .planos th, .planos td { padding: 10px; font-size: 13px; }
+}
+
+
+</style>
+
+</head>
+<body class="corpo">
+  <article class="planos">
+  <h2>Planos LookDuck</h2>
+  <p>Escolha o plano ideal para usar o LookDuck. Todos os valores são baseados em R$ 80,90.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Plano</th>
+        <th>Frequência</th>
+        <th>Preço</th>
+        <th>Detalhes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Básico</td>
+        <td>Mensal</td>
+        <td>R$ 6,74/mês</td>
+        <td>Baseado no valor anual dividido por 12</td>
+      </tr>
+      <tr>
+        <td>Premium</td>
+        <td>Semestral</td>
+        <td>R$ 36,40/6 meses</td>
+        <td>Inclui 10% de desconto sobre o valor proporcional</td>
+      </tr>
+      <tr>
+        <td>Ultimate</td>
+        <td>Anual</td>
+        <td>R$ 80,90/ano</td>
+        <td>Melhor custo-benefício</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+
+</body>
+</html>
