@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+#titulo {
+    font-family: sans-serif;
+    color: #F8FFA8;
+    margin-left: 15%;
+}
+#subtitulo {
+    font-family: sans-serif;
+    color: #F3FFA6;
+    margin-left: 12%;
+}
+#subtitulo2 {
+    font-family: sans-serif;
+    color: #F3FFA6;
+    margin-left: 18%;
+}
+#subtitulo3 {
+    font-family: sans-serif;
+    color: #F3FFA6;
+    margin-left: -2%;
+}
+#check{
+    display: inline-block;
+}
+fieldset {
+    border: 0;
+}
+body{
+    background-color: #8F3CD8;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #F8FFA8;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #8700FF;
+    border-radius: 5px;
+}
+.grupo:before, .grupo:after {
+    display: table;
+}
+.grupo:after {
+    clear: both;
+}
+.campo {
+    margin-bottom: 1em;
+}
+.campo label {
+    margin-bottom: 0.2em;
+    color: #F8FFA8;
+    display: block;
+}
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #FDFFAB;
+    box-shadow: 2px 2px 2px #E2ABFF;
+    display: block;
+}
+.campo select option {
+    padding-right: 1em;
+}
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #E0E0F8;
+}
+.botao {
+    font-size: 1.2em;
+    background: #DF9CFF;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px #59429d;
+    text-shadow: 1px 1px 1px #FDFFAB;
+    position: absolute;
+    top: 280%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.botao:hover {
+    background: #FFDE59;
+    box-shadow: inset 2px 2px 2px #C0A126;
+    text-shadow: none;
+}
+.botao, select{
+    cursor: pointer;
+}
+</style>
+    <title>Cadastro</title>
+    </head>
+    <body>
+        <div>
+            <h1 id="titulo">Cadastro</h1>
+            <p id="subtitulo">Complete suas informações</p>
+            <br>
+        </div>
+          <br></br>
+        <form>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="text" name="email" id="email" required>
+                </div>
+                <div class="campo">
+                    <label for="telefone"><strong>Telefone</strong></label>
+                    <input type="text" name="telefone" id="telefone" required>
+                </div>
+            </fieldset>
+            
+            <div class="campo">
+                <label for="idade"><strong>Idade</strong></label>
+                <select id="idade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Até 10 anos</option>
+                  <option>Entre 10 à 20 anos</option>
+                  <option>Entre 20 à 30 anos</option>
+                  <option>Entre 30 à 50 anos</option>
+                  <option>50+</option>
+                </select>
+            </div>
+            
+            <div class="campo">
+                <label><strong>Como conhceu Look Duck streaming?</strong></label>
+                <label>
+                    <input type="radio" name="poramigos" value="poramigos">Por amigos.
+                </label>
+                <label>
+                    <input type="radio" name="porparentes" value="porparentes">Por parentes.
+                </label>
+                <label>
+                    <input type="radio" name="porjonal" value="porjonal">Por jornais
+                </label>
+                <label>
+                    <input type="radio" name="pelatv" value="pelatv">Pela tv.
+                </label>
+                <label>
+                    <input type="radio" name="outro" value="outro">Outro.
+                </label>
+            </div>
+            
+            <div class="campo">
+                <label><strong>Caso a opçao selecionada seja "outro"</strong></label>
+                <label for="outro"><strong>Cite o outro meio em que conheceu Look Duck streaming: </strong></label>
+                <textarea rows="6" style="width: 26em" id="outro" name="outro"></textarea>
+            </div>
+            
+            <br></br>
+            
+            <h1 id="titulo">Assinatura</h1>
+            
+            <br></br>
+            
+            <fieldset class="grupo">
+                <div class="campo">
+                <ol>
+                    <li>Plano</li>
+                </ol>
+                    <label for="basico"><strong>Básico</strong></label>
+                    <ul>
+                        <ul>Valores</ul>
+                        <li>3 meses por R$23,99</li>
+                        <li>6 meses por R$44,99</li>
+                        <li>1 ano por R$95,00</li>
+                        </ul>
+                    <ul>
+                </div>
+                
+                <div class="campo">
+                <ol start="2">
+                    <li>Plano</li>
+                </ol>
+                    <label for="premium"><strong>Premium</strong></label>
+                    <ul>
+                            <ul>Valores</ul>
+                            <li>3 meses por R$35,00</li>
+                            <li>6 meses por R$77,99</li>
+                            <li>1 ano por R$152,99</li>
+                    </ul>
+                </div>
+                <div class="campo">
+                <ol start="3">
+                    <li>Plano</li>
+                </ol>
+                    <label for="vip"><strong>VIP</strong></label>
+                    <ul>
+                                <ul>Valores</ul>
+                                <li>3 meses por R$42,99</li>
+                                <li>6 meses por R$80,00</li>
+                                <li>1 ano por R$148,99</li>
+                    </ul>
+                </div>
+            </fieldset>
+
+            <br></br>
+            
+            <div class="campo">
+                <label for="plano"><strong>Selecione o plano desejado:</strong></label>
+                <select id="plano" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Básico</option>
+                  <option>Premium</option>
+                  <option>VIP</option>
+                </select>
+            </div>
+            
+            <div class="campo">
+                <label for="tempoassinatura"><strong>Selecione o tempo da assinatura:</strong></label>
+                <select id="tempoassinatura" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>3 meses</option>
+                  <option>6 meses</option>
+                  <option>1 ano</option>
+                </select>
+            </div>
+            
+            <div class="campo">
+                <label for="pagamentoassinatura"><strong>Selecione a forma de pagamento:</strong></label>
+                <select id="pagamentoassinatura" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Boleto</option>
+                  <option>Cartão (Crédito)</option>
+                  <option>Cartão (Débito)</option>
+                  <option>Pix</option>
+                </select>
+            </div>
+            
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label><strong> Caso a opção desejada seja pix a chave pix é:</strong></label>
+                    <label for="pixemail"><strong> email: PagamentodeAssinaturaLookDuck@gmail.com</strong></label>
+                </div>
+            </fieldset>
+            
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="numero"><strong>Caso a opçao seja cartão, insira o número:</strong></label>
+                    <input type="text" name="numero" id"numero">
+                </div>
+            </fieldset>
+            
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="cpf"><strong> Insira seu CPF:</strong></label>
+                    <input type="text" name="cpf" id"cpf" required>
+                </div>
+            </fieldset>
+            
+            <br></br>
+            
+            <h1 id="subtitulo2">Perfil</h1>
+            <p id="subtitulo3">Para ter uma melhor experiência responda algumas perguntas a seguir</p>
+            
+            <br></br>
+            
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nomedaconta"><strong>Nome da conta:</strong></label>
+                    <input type="text" name="nomedaconta" id"nomedaconta" required>
+                </div>
+            </fieldset>
+            
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>Preferências:</strong></label><br><br>
+                    <input type="checkbox" id="preferencia1" name="preferencia1" value="acao">
+                    <label for="preferencia1"> Açao</label>
+                    <input type="checkbox" id="preferencia2" name="preferencia2" value="aventura">
+                    <label for="preferencia2"> Aventura</label>
+                    <input type="checkbox" id="preferencia3" name="preferencia3" value="ciemadearte">
+                    <label for="preferencia3"> Cinema de arte</label>
+                    <input type="checkbox" id="preferencia4" name="preferencia4" value="comedia">
+                    <label for="preferencia4"> Comédia</label>
+                    <input type="checkbox" id="preferencia5" name="preferencia5" value="documentario">
+                    <label for="preferencia5"> Documentário</label>
+                    <br></br>
+                    <input type="checkbox" id="preferencia6" name="preferencia6" value="docuficcao">
+                    <label for="preferencia6"> Docuficção</label>
+                    <input type="checkbox" id="preferencia7" name="preferencia7" value="drama">
+                    <label for="preferencia7"> Drama</label>
+                    <input type="checkbox" id="preferencia8" name="preferencia8" value="faroeste">
+                    <label for="preferencia8"> Faroeste</label>
+                    <input type="checkbox" id="preferencia9" name="preferencia9" value="fantasia">
+                    <label for="preferencia9"> Fantasia</label>
+                    <input type="checkbox" id="preferencia10" name="preferencia10" value="ficcaocientifica">
+                    <label for="preferencia10"> Ficção científica</label>
+                    <br></br>
+                    <input type="checkbox" id="preferencia11" name="preferencia11" value="filmepolicial">
+                    <label for="preferencia11"> Filme policial</label>
+                    <input type="checkbox" id="preferencia12" name="preferencia12" value="infantil">
+                    <label for="preferencia12"> Infantil</label>
+                    <input type="checkbox" id="preferencia12" name="preferencia13" value="misterio">
+                    <label for="preferencia13"> Mistério</label>
+                    <input type="checkbox" id="preferencia13" name="preferencia14" value="musical">
+                    <label for="preferencia14"> Musical</label>
+                    <input type="checkbox" id="preferencia14" name="preferencia15" value="roamance">
+                    <label for="preferencia15"> Roamance</label>
+                    <input type="checkbox" id="preferencia15" name="preferencia16" value="serie">
+                    <label for="preferencia15"> Série</label>
+                    <br></br>
+                    <input type="checkbox" id="preferencia16" name="preferencia17" value="suspense">
+                    <label for="preferencia16"> Suspense</label>
+                    <input type="checkbox" id="preferencia17" name="preferencia18" value="terror">
+                    <label for="preferencia17"> Terror</label>
+                    <input type="checkbox" id="preferencia19" name="preferencia19" value="thriller">
+                    <label for="preferencia18"> Thriller</label>
+                    <input type="checkbox" id="preferencia20" name="preferencia20" value="surpresa">
+                    <label for="preferencia18"> Surpresa</label>
+                </div>
+            </fieldset>
+            
+            <br></br>
+            
+            <div class="campo">
+                <label for="classificacaoindicativa"><strong>Classificação indicativa</strong></label>
+                <select id="classificacaoindicativa" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Livre até 10 anos</option>
+                  <option>Livre até 12 anos</option>
+                  <option>Livre até 14 anos</option>
+                  <option>Livre até 16 anos</option>
+                  <option>Livre até 18 anos</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <br>
+                <label for="Compartilhamento"><strong>Caso queira compartilhar algum elogio, problema ou</strong></label>
+                <label for="Compartilhamento"><strong> recomendação escreva abaixo: </strong></label>
+                <textarea rows="6" style="width: 26em" id="Compartilhamento" name="Compartilhamento"></textarea>
+            </div>
+            <button class="botao" type="submit" onsubmit="">Concluir</button>
+        </form>
+        <br></br><br></br>
+        
+    </body>
+</html>
