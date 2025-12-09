@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <style>
+    .corpo{
+        background-color: black;
+    }
 * {
     margin: 0;
     padding: 0;
@@ -105,7 +108,7 @@ fieldset.grupo .campo {
 </style>
     <title>Cadastro</title>
     </head>
-    <body>
+    <body class="corpo">
         <div>
             <h1 id="titulo">Cadastro</h1>
             <p id="subtitulo">Complete suas informações</p>
@@ -148,7 +151,7 @@ fieldset.grupo .campo {
             
             <div class="campo">
                 <label><strong>Como conhceu Look Duck streaming?</strong></label>
-                <label>
+                <label><br>
                     <input type="radio" name="poramigos" value="poramigos">Por amigos.
                 </label>
                 <label>
@@ -167,7 +170,7 @@ fieldset.grupo .campo {
             
             <div class="campo">
                 <label><strong>Caso a opçao selecionada seja "outro"</strong></label>
-                <label for="outro"><strong>Cite o outro meio em que conheceu Look Duck streaming: </strong></label>
+                <label for="outro"><strong>Cite o outro meio em que conheceu Look Duck streaming: </strong></label><br>
                 <textarea rows="6" style="width: 26em" id="outro" name="outro"></textarea>
             </div>
             
@@ -181,13 +184,11 @@ fieldset.grupo .campo {
                 <div class="campo">
                 <ol>
                     <li>Plano</li>
-                </ol>
+                </ol><br>
                     <label for="basico"><strong>Básico</strong></label>
-                    <ul>
-                        <ul>Valores</ul>
-                        <li>3 meses por R$23,99</li>
-                        <li>6 meses por R$44,99</li>
-                        <li>1 ano por R$95,00</li>
+                    <ul><br>
+                        <ul>Valor</ul>
+                        <li>1 mês por R$6,74 (Cancele quando quiser)</li>
                         </ul>
                     <ul>
                 </div>
@@ -195,25 +196,21 @@ fieldset.grupo .campo {
                 <div class="campo">
                 <ol start="2">
                     <li>Plano</li>
-                </ol>
+                </ol><br>
                     <label for="premium"><strong>Premium</strong></label>
-                    <ul>
+                    <ul><br>
                             <ul>Valores</ul>
-                            <li>3 meses por R$35,00</li>
-                            <li>6 meses por R$77,99</li>
-                            <li>1 ano por R$152,99</li>
+                            <li>6 meses por R$36,40 (10% de Desconto)</li>
                     </ul>
                 </div>
                 <div class="campo">
                 <ol start="3">
                     <li>Plano</li>
-                </ol>
-                    <label for="vip"><strong>VIP</strong></label>
-                    <ul>
+                </ol><br>
+                    <label for="vip"><strong>Ultimate</strong></label>
+                    <ul><br>
                                 <ul>Valores</ul>
-                                <li>3 meses por R$42,99</li>
-                                <li>6 meses por R$80,00</li>
-                                <li>1 ano por R$148,99</li>
+                                <li>1 ano por R$80,90</li>
                     </ul>
                 </div>
             </fieldset>
@@ -226,17 +223,7 @@ fieldset.grupo .campo {
                   <option selected disabled value="">Selecione</option>
                   <option>Básico</option>
                   <option>Premium</option>
-                  <option>VIP</option>
-                </select>
-            </div>
-            
-            <div class="campo">
-                <label for="tempoassinatura"><strong>Selecione o tempo da assinatura:</strong></label>
-                <select id="tempoassinatura" required>
-                  <option selected disabled value="">Selecione</option>
-                  <option>3 meses</option>
-                  <option>6 meses</option>
-                  <option>1 ano</option>
+                  <option>Ultimate</option>
                 </select>
             </div>
             
@@ -357,7 +344,7 @@ fieldset.grupo .campo {
             </div>
             <button class="botao" type="submit" onsubmit="">Concluir</button>
         </form>
-        <br></br><br></br>
+        
         
     </body>
 </html>
